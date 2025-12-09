@@ -1,0 +1,4 @@
+name: wikijs-aws
+runtime: python
+description: Infrastructure as Code for Wiki.js deployment on AWS using Pulumi
+
