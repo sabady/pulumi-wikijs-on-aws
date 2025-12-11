@@ -1,5 +1,6 @@
 # Documentation Platform
 
+```bash
 ./pulumi/
 ├── components
 │   ├── compute
@@ -27,6 +28,7 @@
 ├── Pulumi.prod.yaml
 ├── Pulumi.yaml
 └── requirements.txt
+```
 
 An internal knowledge management platform for teams that allows employees to collaborate on documentation, store company policies, and manage technical knowledge in a structured way.
 
