@@ -1,5 +1,33 @@
 # Documentation Platform
 
+./pulumi/
+├── components
+│   ├── compute
+│   │   ├── alb_controller.py
+│   │   ├── eks.py
+│   │   ├── __init__.py
+│   │   ├── karpenter.py
+│   │   └── wikijs.py
+│   ├── __init__.py
+│   ├── monitoring
+│   │   ├── efk.py
+│   │   ├── keda.py
+│   │   └── observability.py
+│   ├── networking
+│   │   ├── __init__.py
+│   │   └── vpc.py
+│   ├── security
+│   │   ├── iam.py
+│   │   └── __init__.py
+│   └── storage
+│       ├── __init__.py
+│       ├── rds.py
+│       └── s3.py
+├── __main__.py
+├── Pulumi.prod.yaml
+├── Pulumi.yaml
+└── requirements.txt
+
 An internal knowledge management platform for teams that allows employees to collaborate on documentation, store company policies, and manage technical knowledge in a structured way.
 
 The chosen [Wiki.js](https://js.wiki/), an open-source, self-hosted wiki platform that provides a powerful editor, authentication options, and content organization features.
@@ -54,3 +82,4 @@ The chosen [Wiki.js](https://js.wiki/), an open-source, self-hosted wiki platfor
 - Prometheus/Grafana via kube-prometheus-stack (Grafana password from Pulumi secret).
 - KEDA scaled object uses Prometheus HTTP request rate for Wiki.js.
 - Karpenter provisioner: spot-only, amd64/arm64, scale-to-zero, consolidation on; it is the sole capacity provider (managed node group disabled).
+
