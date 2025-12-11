@@ -1,3 +1,4 @@
+# Stack config
 config:
   aws:region: us-east-1
   wikijs:environment: prod
